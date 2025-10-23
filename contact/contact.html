@@ -8,17 +8,22 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="assets/logo.png" alt="logo" width="100px" height="100px" >
+        <div>
+            <img class="logos" src="assets/logo.png" alt="logo" width="100px" height="100px">
         </div>
-        <nav class="head-links">
-        <ul class="lu">
-        <li class=""><label><a class="head-contact-links" href="">Accueil</a></label></li>
-        <li class=""><label><a class="head-contact-links" href="">Programme</a></label></li>
-        <li class=""><label><a class="head-contact-links" href="">Activités</a></label></li>
-        <li class=""><label><a class="head-contact-links" href="">Inscription</a></label></li>
-        <li class=""><label><a class="head-contact-links head-contact-btn" href="">Contact</a></label></li>
-      </ul>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-list" id="nav-menu">
+            <ul class="lu">
+            <li class="menu"><a class="aa" href="#">Accueil</a></li>
+            <li class="menu"><a class="aa" href="#">Programme</a></li>
+            <li class="menu"><a class="aa" href="#">Activités</a></li>
+            <li class="menu"><a class="aa" href="#">Inscription</a></li>
+            <li class="menu"><a class="aa bb" href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main class="contact-section">
@@ -82,6 +87,16 @@
                             <img src="assets/ri--linkedin-fill.svg" alt="img">
                         </a>
                     </div>
+                    <div class="ball">
+                    </div>
+                    <div class="ball2">
+                    </div>
+                    <div class="ball3">
+                    </div>
+                    <div class="ball4">
+                    </div>
+                    <div class="ball5">
+                    </div>
                 </div>
             </div>
             <div class="hero-contact-right">
@@ -93,15 +108,15 @@
                         </div>
                         <div class="hero-contact-right-title">
                             <img src="assets/icon-park-solid--hand-left.svg" alt="img">
-                            <h3>Transports en commun : Métro ligne 4, station École - Bus 21, 47, 6</h3>
+                            <h3>Transports en commun: Métro ligne 4, station École-Bus 21, 47</h3>
                         </div>
                         <div class="hero-contact-right-title">
                             <img src="assets/icon-park-solid--hand-left.svg" alt="img">
-                            <h3>Transports en commun : Métro ligne 4, station École - Bus 21, 47, 6</h3>
+                            <h3>Parking : Parking gratuit disponible pour les visiteurs (100 places)</h3>
                         </div>
                         <div class="hero-contact-right-title">
                             <img src="assets/icon-park-solid--hand-left.svg" alt="img">
-                            <h3>Transports en commun : Métro ligne 4, station École - Bus 21, 47, 6</h3>
+                            <h3>Lycée Excellence 123 Avenue de l'Éducation 75000 Paris France</h3>
                         </div>
                     </div>
                     <div class="hero-contact-right-maps">
@@ -111,5 +126,26 @@
             </div>
         </div>
     </main>
+    <footer class="contact-footer">
+        <p>© 2025 Lycée Excellence - Tous droits réservés <br>Mentions légales | Politique de confidentialité | Plan du site <br>Développé par l'équipe informatique de l'établissement</p>
+    </footer>
+    <script>
+        // menu toggle
+        const burger = document.getElementById('burger');
+        const navMenu = document.getElementById('nav-menu');
+
+        burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        });
+
+        // fermer le menu quand on clique sur un lien
+        document.querySelectorAll('.nav-list a').forEach(link =>
+        link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        navMenu.classList.remove('active');
+        })
+    );
+    </script>
 </body>
 </html>
