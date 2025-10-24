@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -8,17 +8,22 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="assets/logo.png" alt="logo" width="100px" height="100px" >
+        <div>
+            <img class="logos" src="img/logo.png" alt="logo" width="100" height="100">
         </div>
-        <nav class="head-links">
-        <ul class="lu">
-        <li class=""><label><a class="head-contact-links" href="">Accueil</a></label></li>
-        <li class=""><label><a class="head-contact-links" href="">Programme</a></label></li>
-        <li class=""><label><a class="head-contact-links" href="">Activités</a></label></li>
-        <li class=""><label><a class="head-contact-links" href="">Inscription</a></label></li>
-        <li class=""><label><a class="head-contact-links head-contact-btn" href="">Contact</a></label></li>
-      </ul>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-list" id="nav-menu">
+            <ul class="lu">
+            <li class="menu"><a class="aa" href="#">Accueil</a></li>
+            <li class="menu"><a class="aa" href="#">Programme</a></li>
+            <li class="menu"><a class="aa" href="#">Activités</a></li>
+            <li class="menu"><a class="aa" href="#">Inscription</a></li>
+            <li class="menu"><a class="aa bb" href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main class="programme-section">
@@ -44,7 +49,7 @@
             </div>
             <div class="border">
                 <div class="time-line-emoji">
-                    <img src="assets/1f553.webp" alt="emoji">
+                    <img src="img/1f553.webp" alt="emoji">
                 </div>
             </div>
             <div class="constant-div">
@@ -70,7 +75,7 @@
             </div>
             <div class="border">
                 <div class="time-line-emoji">
-                    <img src="assets/1f9ea.webp" alt="emoji">
+                    <img src="img/1f9ea.webp" alt="emoji">
                 </div>
             </div>
             <div class="constant-div">
@@ -96,7 +101,7 @@
             </div>
             <div class="border">
                 <div class="time-line-emoji">
-                    <img src="assets/guitar_1f3b8.webp" alt="emoji">
+                    <img src="img/guitar_1f3b8.webp" alt="emoji">
                 </div>
             </div>
             <div class="constant-div">
@@ -122,7 +127,7 @@
             </div>
             <div class="border">
                 <div class="time-line-emoji">
-                    <img src="assets/fork-and-knife-with-plate_1f37d-fe0f.webp" alt="emoji">
+                    <img src="img/fork-and-knife-with-plate_1f37d-fe0f.webp" alt="emoji">
                 </div>
             </div>
             <div class="constant-div">
@@ -148,7 +153,7 @@
             </div>
             <div class="border">
                 <div class="time-line-emoji">
-                    <img src="assets/1f3c8.webp" alt="emoji">
+                    <img src="img/1f3c8.webp" alt="emoji">
                 </div>
             </div>
             <div class="constant-div">
@@ -174,7 +179,7 @@
             </div>
             <div class="border">
                 <div class="time-line-emoji">
-                    <img src="assets/robot_1f916.webp" alt="emoji">
+                    <img src="img/robot_1f916.webp" alt="emoji">
                 </div>
             </div>
             <div class="constant-div">
@@ -200,11 +205,50 @@
             </div>
             <div class="border">
                 <div class="time-line-emoji">
-                    <img src="assets/question-mark-microsoft.webp" alt="emoji">
+                    <img src="img/question-mark-microsoft.webp" alt="emoji">
                 </div>
             </div>
             <div class="constant-div">
             </div>
+        </div>
     </main>
+    <footer>
+        <div class="content-footer">
+        <div class="logo-content"><img class="logo-footer" src="img/logo_excellence.png" alt="" width="150" height="150">
+    
+        <div class="tous">
+            <h3 class="color">Contact </h3>
+            <hr class="lin">
+            <div class="mail">
+            <div class="Contact"><img src="img/cercle.png" alt="" width="30" height="30"><p class="color">01 23 45 67 89</p></div>
+            <div class="Contact"><img src="img/carre.png" alt="" width="30" height="30"><p class="color">contact@lycee-excellence.fr</p></div>
+            <div class="Contact"><img src="img/indiquer.png" alt="" width="30" height="30"><p class="color">123 Avenue de l'Éducation</p></div>
+            </div>
+          </div></div>
+        <div class="positio"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.861432767056!2d-2.9307930999999994!3d35.160076399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd77a779ea8f757b%3A0x4368abd20c6b127d!2sL&#39;excellence!5e0!3m2!1sfr!2sma!4v1761080866944!5m2!1sfr!2sma" width="100%" height="250" style="border-radius: 25px;" allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        
+        </div>
+        <div  style="text-align: center;"><p class="color">© 2025 Lycée Excellence - Tous droits réservés <br>
+                   Mentions légales | Politique de confidentialité | Plan du site <br>
+                 Développé par l'équipe informatique de l'établissement</p></div>
+    </footer>
+    <script>
+        // menu toggle
+        const burger = document.getElementById('burger');
+        const navMenu = document.getElementById('nav-menu');
+
+        burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        });
+
+        // fermer le menu quand on clique sur un lien
+        document.querySelectorAll('.nav-list a').forEach(link =>
+        link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        navMenu.classList.remove('active');
+        })
+    );
+    </script>
 </body>
 </html>

@@ -18,7 +18,7 @@
 header{
     background-color: #D9D8D6;
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     gap: 30vw;
     justify-content: center;
@@ -415,7 +415,7 @@ header{
     }
 
     .contact-title p {
-        font-size: 10px
+        font-size: 13px
     }
 
     .contact-footer {
@@ -432,6 +432,17 @@ header{
 @media (max-width: 387px) {
     .hero-contact-left-iner {
         width: 100%;
+    }
+    .tel-box  p{
+        font-size: 12px;
+    }
+
+    .gmail-box  p{
+        font-size: 10px
+    }
+
+    .time-box p {
+        font-size: 10px;
     }
 }
 
