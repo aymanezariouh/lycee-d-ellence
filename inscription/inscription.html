@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d’inscription</title>
+  <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+
+  <header>
+    <div>
+      <img class="logos" src="logo.png" alt="logo" width="100px" height="100px">
+    </div>
+
+    <div class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-list" id="nav-menu">
+      <ul class="lu">
+        <li><a class="aa" href="#">Accueil</a></li>
+        <li><a class="aa" href="#">Programme</a></li>
+        <li><a class="aa" href="#">Activités</a></li>
+        <li><a class="aa" href="#">Inscription</a></li>
+        <li><a class="aa bb" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="image">
+      <img src="temps-libre-d-un-etudiant-rythme-de-vie-du-campus-du-baccalaureat-cinq-etudiants-amicaux-marchent.jpg" alt="">
+    </div>
+
+    <div class="titre">
+      <h1>Rejoignez-nous</h1>
+      <h2>Journée Portes Ouvertes 2025</h2>
+      <h2>Lycée Excellence - Samedi 15 Mars 2025 | 9h00 - 18h00</h2>
+    </div>
+
+    <div class="attention">
+      <h2>⚠️ Attention :</h2>
+      <p>Les places sont limitées pour certaines activités. Nous vous conseillons de vous inscrire rapidement.</p>
+    </div>
+
+    <div class="form-container">
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nom complet</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>Adresse email</label>
+            <input type="email" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Activités souhaitées</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>Tranche d'âge</label>
+            <input type="text" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Numéro de téléphone</label>
+            <input type="tel" />
+          </div>
+          <div class="form-group">
+            <label>Nombre de personnes</label>
+            <input type="number" />
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Commentaires ou questions</label>
+          <textarea rows="3"></textarea>
+        </div>
+
+        <div class="form-button">
+          <button type="submit">S'inscrire</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="confermation">
+      <p>
+        <strong>Confirmation :</strong> Vous recevrez un email de confirmation dans les 24 heures avec tous les détails pratiques.<br>
+        <strong>Contact :</strong> Pour toute question, contactez-nous au +212 23 45 67 89.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="content-footer">
+      <div class="logo-content">
+        <img class="logo-footer" src="logo_excellence.png" alt="" width="150px" height="150px">
+
+        <div class="tous">
+          <h3 class="color">Contact</h3>
+          <div class="mail">
+            <div class="Contact"><img src="cercle.png" width="30px" height="30px"><p class="color">0556892313</p></div>
+            <div class="Contact"><img src="carre.png" width="30px" height="30px"><p class="color">lycéeexcellence@gmail.com</p></div>
+            <div class="Contact"><img src="indiquer.png" width="30px" height="30px"><p class="color">Nador, Excellence, 15 Nador</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="positio">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.861432767056!2d-2.9307930999999994!3d35.160076399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd77a779ea8f757b%3A0x4368abd20c6b127d!2sL&#39;excellence!5e0!3m2!1sfr!2sma!4v1761080866944!5m2!1sfr!2sma" width="100%" height="250" style="border-radius:25px; border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <p class="color">
+        © 2025 Lycée Excellence - Tous droits réservés <br>
+        Mentions légales | Politique de confidentialité | Plan du site <br>
+        Développé par l'équipe informatique de l'établissement
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // menu toggle
+    const burger = document.getElementById('burger');
+    const navMenu = document.getElementById('nav-menu');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // fermer le menu quand on clique sur un lien
+    document.querySelectorAll('.nav-list a').forEach(link =>
+      link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        navMenu.classList.remove('active');
+      })
+    );
+  </script>
+
+</body>
+</html>
