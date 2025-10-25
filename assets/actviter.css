@@ -4,10 +4,9 @@
 }
 
 header{
-    left: 0;
     background-color: #D9D8D6;
     width: 100%;
-    height: 82px;
+    height: 80px;
     display: flex;
     gap: 30vw;
     justify-content: center;
@@ -17,19 +16,32 @@ header{
     z-index: 100;
 }
 
-.lu{
-    display: flex;
-    gap: 80px;
-    list-style: none;
+.logos {
+    margin-left: 20px;
 }
 
+.nav-list {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lu{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
 .aa{
     text-decoration: none;
     color: #3F4447;
+    
 }
-
 .aa:hover{
     color: #3796CC;
+
+
 }
 
 .bb{
@@ -41,15 +53,14 @@ header{
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
-    color: #3F4447;
-    transition: 0.3s ease-in-out;
+    color: #3F4447;  
 }
-
 .bb:hover{
     background-color: #3F4447;
     box-shadow: white 2px 5px 10px;
     color: white;
     transform: scale(1.2);
+    transition: 0.3s ease-in-out;
 }
 
 .burger {

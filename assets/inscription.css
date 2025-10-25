@@ -5,61 +5,64 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: #D9D8D6;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
+header{
+    background-color: #D9D8D6;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 30vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 }
 
 .logos {
-  border-radius: 50%;
+    margin-left: 20px;
 }
 
 .nav-list {
-  transition: all 0.4s ease;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.lu {
-  display: flex;
-  gap: 60px;
-  list-style: none;
+.lu{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+.aa{
+    text-decoration: none;
+    color: #3F4447;
+    
+}
+.aa:hover{
+    color: #3796CC;
+
+
 }
 
-.aa {
-  text-decoration: none;
-  color: #3F4447;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.bb{
+    background-color: #3796CC;
+    width: 100px;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
+    color: #3F4447;  
 }
-
-.aa:hover {
-  color: #3796CC;
-}
-
-.bb {
-  background-color: #3796CC;
-  width: 100px;
-  height: 35px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #3F4447;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
-  transition: 0.3s ease-in-out;
-}
-
-.bb:hover {
-  background-color: #3F4447;
-  color: white;
-  transform: scale(1.1);
+.bb:hover{
+    background-color: #3F4447;
+    box-shadow: white 2px 5px 10px;
+    color: white;
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
 }
 
 .burger {
@@ -186,7 +189,7 @@ section {
   width: 100%;
   max-width: 700px;
   margin: 30px auto;
-  background-image: url('Capture d’écran 2025-10-22 122209.png');
+  background-image: url('/image/Capture\ d’écran\ 2025-10-22\ 122209.png');
   background-size: cover;
   background-position: center;
   padding: 50px;
